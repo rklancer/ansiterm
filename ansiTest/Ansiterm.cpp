@@ -28,7 +28,7 @@ Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 The latest version of this software is available at
 */
 
-#include "WProgram.h"
+#include "Arduino.h"
 #include "Ansiterm.h"
 
 Ansiterm::Ansiterm()

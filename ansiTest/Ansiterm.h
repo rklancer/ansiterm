@@ -30,7 +30,7 @@ The latest version of this software is available at
 
 #ifndef Ansiterm_h
 #define Ansiterm_h
-#include "WProgram.h"
+#include "Arduino.h"
 #define ESCAPE 0x1B
 #define BRACE '['
 #define BLACK 0
