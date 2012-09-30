@@ -34,13 +34,13 @@ void loop() {
   delay(2000);
   Serial.print("this appears over the last line");
   delay(2000);
-  splash("Testing tabs (doesn't seem to work)");
-  ansi.setTabAtColumn(33);//doesn't seem to work
-  ansi.setTabAtColumn(66);
-  Serial.write(9);
-  Serial.write("33");
-  Serial.write(9);
-  Serial.write("66");
+  // splash("Testing tabs (doesn't seem to work)");
+  // ansi.setTabAtColumn(33);//doesn't seem to work
+  // ansi.setTabAtColumn(66);
+  // Serial.write(9);
+  // Serial.write("33");
+  // Serial.write(9);
+  // Serial.write("66");
   
   splash("Testing xy function ...");
   ansi.setBackgroundColor(YELLOW);
