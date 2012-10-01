@@ -2,7 +2,7 @@ This project consists of the files Ansiterm.h, Ansiterm.cpp, and ansiTest.pde, w
 
 They implement an Arduino library for emitting ANSI terminal control codes over the serial port. This allows your Arduino program to present "nice", screen-oriented instead of character-by-character output to the computer connected to the Arduino's serial port. See http://wiki.bash-hackers.org/scripting/terminalcodes for more information about ANSI codes.
 
-In order to view the output, you will need to use an ANSI capable terminal emulator program. The serial monitor embedded in the Arduino IDE does not correctly interpret the terminal codes. Instead of seeing a nice display, it shows you something along the lines of 
+In order to view the output, you will need to use an ANSI capable terminal emulator program. The serial monitor embedded in the Arduino IDE does not correctly interpret the terminal codes. Instead of seeing a nice display, it shows you something along the lines of
 
     [40m[1J[H[42mTesting 'forward', 'backward', 'up', 'down', and overwriting ...
 

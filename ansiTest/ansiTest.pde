@@ -19,7 +19,7 @@ void loop() {
   Serial.write("20");
   ansi.forward(10);
   Serial.write("30");
- ansi.down(1);
+  ansi.down(1);
 
   ansi.setBackgroundColor(RED);
   ansi.setForegroundColor(WHITE);
@@ -41,12 +41,12 @@ void loop() {
   // Serial.write("33");
   // Serial.write(9);
   // Serial.write("66");
-  
+
   splash("Testing xy function ...");
   ansi.setBackgroundColor(YELLOW);
   ansi.setForegroundColor(BLACK);
   ansi.eraseScreen();
-  
+
   for (int x = 1; x < 60; x+=10) {
     delay(200);
     for (int y = 1; y < 14;  y +=2) {
@@ -57,7 +57,7 @@ void loop() {
       delay(200);
     }
   }
-  
+
   ansi.eraseScreen();
   delay(1000);
   splash("Making a table ...");
@@ -65,13 +65,14 @@ void loop() {
   //ansi.setForegroundColor(YELLOW);
   for (int x = 0; x < 3; x++) {
     for (int y = 0; y < 4; y++) {
-      ansi.xy(x*20,y+1);    
-    if (y == 0) {
-      ansi.setForegroundColor(GREEN);
-    }
-    else {ansi.setForegroundColor(WHITE);
-    }
-    Serial.print(messages[y][x]);
+      ansi.xy(x*20,y+1);
+      if (y == 0) {
+        ansi.setForegroundColor(GREEN);
+      }
+      else {
+        ansi.setForegroundColor(WHITE);
+      }
+      Serial.print(messages[y][x]);
     }
   }
   delay(4000);
@@ -79,12 +80,12 @@ void loop() {
 }
 
 void splash(char * message) {
-    ansi.setBackgroundColor(BLACK);
-   ansi.eraseScreen();//works
+  ansi.setBackgroundColor(BLACK);
+  ansi.eraseScreen();//works
   ansi.home();
   ansi.setBackgroundColor(GREEN);
   Serial.print(message);
   delay(1000);
-      ansi.setBackgroundColor(BLACK);
-   ansi.eraseScreen();
+  ansi.setBackgroundColor(BLACK);
+  ansi.eraseScreen();
 }

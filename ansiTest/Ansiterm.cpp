@@ -1,9 +1,9 @@
-/* 
+/*
 Ansiterm.cpp -- an Arduino library that simplifies using the ANSI terminal
 control escape sequences. This allows your code to  position text exactly in the
 terminal, to add colour and other effects. To use Ansiterm, an ANSI terminal must
-be connected to the Arduino's serial port. The terminal built into the Arduino 
-IDE does not respond to the ANSI codes, but most MacOs and Linux terminals do. 
+be connected to the Arduino's serial port. The terminal built into the Arduino
+IDE does not respond to the ANSI codes, but most MacOs and Linux terminals do.
 In Windows, I read that Hyperterm responds to ANSI codes. Realterm responds to most
 codes, but will not change the color of the foreground.
 
